@@ -1,6 +1,5 @@
-import { Suggestion } from './../../models/suggestion';
 import { Component } from '@angular/core';
-
+import { Suggestion } from '../../models/suggestion';
 
 @Component({
   selector: 'app-list-suggestion',
@@ -48,16 +47,5 @@ export class ListSuggestionComponent {
       nbLikes: 0
     },
   ];
-
-
-  like(suggestion : Suggestion){
-      suggestion.nbLikes++;
-  }
-
-
-  search = ""
-  searchByTitle(){
-    return this.suggestions.filter(s => s.title.toLowerCase().includes(this.search.toLowerCase()))
-  }
 
 }
