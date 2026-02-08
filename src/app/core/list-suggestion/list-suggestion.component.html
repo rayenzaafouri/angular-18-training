@@ -1,10 +1,18 @@
 <div *ngFor="let s of suggestions"  class="card" style="width: 30rem;">
-  <img class="card-img-top" src="https://picsum.photos/300/200" alt="Suggestion image">
   <div class="card-body">
     <h5 class="card-title">{{s.title}}</h5>
     <h4 class="card-title">{{s.date | date:'dd/MM/yyyy'}}</h4>
     <p class="card-text">{{s.description}}</p>
-    <button class="btn btn-success">👍 Like</button>
+    <button class="btn btn-success" (click)="like(s.id)">👍 Like ({{ s.nbLikes }})</button>
     <button class="btn btn-primary ms-3">💘 Ajouter au favoris</button>
   </div>
+  <br>
 </div>
+
+<!--  
+For next session 
+
+we need add form
+and add suggestion
+
+-->

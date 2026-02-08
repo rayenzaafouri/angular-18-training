@@ -7,8 +7,6 @@ import { Suggestion } from '../../models/suggestion';
   styleUrl: './list-suggestion.component.css'
 })
 export class ListSuggestionComponent {
-
-
   suggestions: Suggestion[] = [
     {
       id: 1,
@@ -47,5 +45,9 @@ export class ListSuggestionComponent {
       nbLikes: 0
     },
   ];
+
+  like(id:number){
+    this.suggestions.filter(s => s.id == id).forEach(s=> s.nbLikes++)
+  }
 
 }
