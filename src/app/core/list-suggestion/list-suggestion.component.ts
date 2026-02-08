@@ -44,6 +44,16 @@ export class ListSuggestionComponent {
       status: 'en_attente',
       nbLikes: 0
     },
+    {
+      id: 50,
+      title: 'Moderniser l\'interface utilisateur',
+      description: 'Refonte complète de l\'interface utilisateur pour une meilleure expérience utilisateur.',
+      category: 'Technologie',
+      date: new Date('2025-01-30'),
+      status: 'en_attente',
+      nbLikes: 0
+    },
+    
   ];
 
   like(id:number){

@@ -1,0 +1,9 @@
+.suggestions-container{
+    width: 100lvw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.suggestion{
+    margin: .5rem
+}
