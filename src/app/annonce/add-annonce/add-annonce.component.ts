@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-add-annonce',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './add-annonce.component.css'
 })
 export class AddAnnonceComponent {
+
 
 }

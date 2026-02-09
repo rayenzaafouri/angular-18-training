@@ -4,6 +4,7 @@ import { AnnonceRoutingModule } from './annonce.routing.module';
 import { AddAnnonceComponent } from './add-annonce/add-annonce.component';
 import { ListAnnonceComponent } from './list-annonce/list-annonce.component';
 import { AnnonceComponent } from './annonce.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -11,7 +12,8 @@ import { AnnonceComponent } from './annonce.component';
   declarations: [AnnonceComponent,AddAnnonceComponent, ListAnnonceComponent],
   imports: [
     CommonModule,
-    AnnonceRoutingModule
+    AnnonceRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class AnnonceModule { }
