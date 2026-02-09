@@ -56,8 +56,16 @@ export class ListSuggestionComponent {
     
   ];
 
-  like(id:number){
-    this.suggestions.filter(s => s.id == id).forEach(s=> s.nbLikes++)
+
+   like(suggestion : Suggestion){
+      suggestion.nbLikes++;
   }
+
+
+  search = ""
+  searchByTitle(){
+    return this.suggestions.filter(s => s.title.toLowerCase().includes(this.search.toLowerCase()))
+  }
+
 
 }

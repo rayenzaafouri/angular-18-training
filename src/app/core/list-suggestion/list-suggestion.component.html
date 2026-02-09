@@ -1,10 +1,11 @@
+<input  [(ngModel)]="search" type="text" class="form-control" placeholder="Type a suggestion ...">
 <div class="suggestions-container">
-  <div *ngFor="let s of suggestions" class="card suggestion" style="width: 30rem;">
+<div *ngFor="let s of searchByTitle()"  class="card" style="width: 25rem;">
     <div class="card-body ">
       <h6 class="card-title">{{s.title}}</h6>
       <h5 class="card-title">{{s.date | date:'dd/MM/yyyy'}}</h5>
       <p class="card-text">{{s.description}}</p>
-      <button class="btn btn-success" (click)="like(s.id)">👍 Like ({{ s.nbLikes }})</button>
+      <button class="btn btn-success" (click)="like(s)">👍 Like ({{ s.nbLikes }})</button>
       <button class="btn btn-primary ms-3">💘 Ajouter au favoris</button>
     </div>
     <br>

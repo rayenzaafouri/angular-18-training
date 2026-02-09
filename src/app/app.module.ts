@@ -8,6 +8,9 @@ import { FooterComponent } from './core/footer/footer.component';
 import { ListSuggestionComponent } from './core/list-suggestion/list-suggestion.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AddSuggestionComponent } from './add-suggestion/add-suggestion.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FooterComponent,
     ListSuggestionComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AddSuggestionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    
   ],
   providers: [
     provideClientHydration()
